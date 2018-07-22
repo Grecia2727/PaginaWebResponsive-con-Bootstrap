@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Social Network - Q.Nutrition</title>
+  <link rel="icon" href="img/icono_frutas_verduras.png">
+ 
+  <link rel="stylesheet" href="style2.css" />
+</head>
+
+<body onload="printPost()" >
+  <header>
+    <div id="welcome-post">
+      <h2>Bienvenid@, disfruta de los beneficios y aportes de nuestra Red Social</h2>
+      <button id="signOut" type="button" class="boton-send-post">Cerrar Sesión</button>
+    </div>
+  </header>
+  <hr>
+  <section>
+    <div id="writePost" class="post-container">
+      <form>
+        <textarea id="post" class="text-area" autofocus placeholder="¿Qué estás pensando?" rows="5" cols="50"></textarea>
+        <input type="button" id="buttonPost" class="boton-send-post" value="Publicar">
+        <select id="privacy" class="select">
+            <option value="0">Selecciona Privacidad</option>
+          <option id="friends" value="amigos">Amigos</option>
+          <option id="public" value="publico">Público</option>
+        </select>
+      </form>
+
+      <div id="publications">
+        
+      </div>
+    </section>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+  <!--<script src="initFirebase.js"></script>-->
+  <script src="firebase.js"></script>
+  <script src="social_network.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
