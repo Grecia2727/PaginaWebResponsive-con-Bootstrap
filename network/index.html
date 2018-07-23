@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Social Network - Q.Nutrition</title>
+  <link rel="icon" href="img/icono_frutas_verduras.png">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style1.css" />
+</head>
+
+<body>
+  <div id="main-container">
+    <section class="section-forms">
+      <div id="formInicio" class="show">
+        <form>
+          <img src="img/logo-q-nutrition.png" id="logo-qnut" class="logo-qnut" alt="logo-qnutrition">
+          <a href="#" class: "icon-Qnutrition"></a>
+          <!-- <h3>Inicio de Sesión</h3> -->
+
+          <input id="email2" class="inputInd" type="email" placeholder="Ingresa e-mail">
+          <span id="error-email2"></span>
+          <input id="password2" class="inputInd" type="password" placeholder="Ingresa contraseña">
+          <span id="error-password2"></span>
+          <input type="button" id="loginButton" class="boton" value="Acceder">
+          <section class="section-option2">
+
+            <p> o </p>
+
+
+            <div class="icon-redes">
+              <span class="icon-sn">
+                <a href="#">
+                  <img src="img/icon-faceb3.png" id="faceButton" alt="icono-facebook">
+                </a>
+                <a href="#">
+                  <img src="img/icon-goog3.png" id="googleButton" alt="icono-google">
+                </a>
+                <button id="optionR" type="button" class="links-footer">Registrarse</button>
+              </span>
+            </div>
+        </form>
+      </div>
+
+
+      <!-- <div id="optionEmail" class="hidden">
+        <form>
+          <label>Acción a realizar:</label>
+          <button id="optionR" type="button">Registrarme</button>
+          <button id="optionS" type="button">Iniciar Sesión</button>
+        </form>
+      </div> -->
+
+      <div id="formRegister" class="hidden">
+        <form>
+
+          <input id="nameUser" type="text" class="inputInd" placeholder="Ingresa tu nombre">
+          <span id="error-nameUser"></span>
+          <input id="email" type="email" class="inputInd" placeholder="Ingresa e-mail">
+          <span id="error-email"></span>
+          <input id="password" type="password" class="inputInd" placeholder="Ingresa contraseña" onkeyup="validatePassword(this.value);"
+          />
+          <span id="msg"></span>
+          <span id="error-password"></span>
+          <span id="msg"> </span>
+          <input id="confirPassword" type="password" class="inputInd" placeholder="Confirmar contraseña">
+          <span id="msg2"> </span>
+          <button id="register" type="button" class="boton">Registrar</button>
+        </form>
+      </div>
+
+      </section>
+  </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <!--<script src="initFirebase.js"></script>-->
+  <script src="firebase.js"></script>
+  <script src="social_network.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+.bodyIndex {
+    color: white;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    box-sizing: content-box;    
+    background-size: auto;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;  
+    text-decoration: underline;      
+}
+
+a {
+    color: yellow;
+}
+
+.introducción {
+    width: 30%;
+    height: 525px;
+    margin: 0em 0em 0em 15em;
+    background: rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    border-radius: 7px;
+    justify-content: center;   
+    text-align: justify; 
+    font-size: 14px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.contenedor {
+    width: 30%;
+    height: 525px;
+    margin: 0em 15em 0em 0em;
+    background: rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    justify-content: center;   
+    text-align: justify;
+    font-size: 14px;
+    float: right;
+}
+
+#cesar {
+    width: 100%
+}
+
+#offset {
+    width: 50%;
+}
+
+.form {
+    font-size: 17px;
+    color: white;
+}
+
+img {
+    width: 50%;
+    padding: 0px 80px;     
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+button {
+    width: 100%;
+    padding: 7px;
+    display: inline-block;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border-radius: 7px;
+    color: white;
+    background: navy;
+    font-weight: 600px;
+    border: 2px solid blue;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: cyan;
+    color: black;
+    font-size: 20px;
+    font: bold;
+}
+
+#resultado {
+    width: 100%;
+    height: 100px;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    margin: 0em 0em 3.5em 0em;
+} 
+
+*************************************************++
+Mensaje al registrar contraseña:
+Utiliza ocho caracteres como mínimo con una combinación de letras, números y símbolos
+
+
+****************************************************
+
+registerButton.addEventListener('click', () => { 
+  if (email == "") {
+    errorEmail.textContent = "Ingrese Correo";
+    alert('Debe ingresar su correo');
+
+  }else if (nameUser == ''){
+    errorNameUser.textContent = "Ingrese su nombre";
+    alert('Debe ingresar su nombre');
+
+  }else if (password == ''){
+    errorPassword.textContent = "IngresePassword";
+    alert('Debe ingresar su contraseña');
+
+  }else if (confirPassword == ''){
+    confirPassword.textContent = "Por favor confirmar Password";
+    alert('Debe confirmar su contraseña');
+
+  }else if (password != confirPassword){
+    alert('Las contraseñas no coinciden');  
+
+  } else if (errorEmail == 'incorrecto'){
+    alert('por favor ingrese un email válido'); 
+    
+  } else {
+    errorNameUser.textContent = "";
+    errorEmail.textContent = "";
+    errorPassword.textContent = "";
+    confirPassword.textContent = "";
+    let newsUser = registerNew(email, password);
+    alert('Tu usuario ha sido registrado! \nConfirma el mensaje de verificación en tu correo y seguidamente puedes Iniciar Sesión')
+    console.log(email);
+    console.log(password);
+    formRegister.style.display = 'none';
+    formButton.style.display = 'block';  
+  }  
+});
+
+*****************************************
+
+
+
+
+

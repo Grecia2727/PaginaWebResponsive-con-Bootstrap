@@ -1,0 +1,63 @@
+body {
+    background-image: url(img/fondo-header-social-qnut.png);  
+    background-repeat: no-repeat;
+    background-position: top center;
+    font-size: 14 px;
+  }
+
+.text-area {
+    width:100% ;
+    padding: 10px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 0.4rem;
+    margin-bottom: 5px;
+    border: solid #aed86f 1px;
+  }
+
+  .select {
+  padding: 13px 5px;
+  width: 48%;
+  line-height: 80px;
+  border: solid #ccc 1px;
+  border-radius: 0.4rem;
+}
+  
+.send-post {
+    display: inline-block;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: rgb(121, 121, 121);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+  h2 {
+  color: #ffffff;
+  text-align: center;
+  }
+
+  .boton-send-post
+  {
+    width:50%;
+    background-color:#93b462;  
+    border: 0px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(83, 83, 83, 0.2);
+    color: #ffffff;  
+    padding: 15px;
+    margin-top: 10px;
+  }
+
+  
+.post-container {
+    padding: 20px;
+    max-width: 70%;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 20px auto;
+    margin-top: 150px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)
+}
